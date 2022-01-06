@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Document(collection = "posts")
 public class BlogPost {
     @Id
-    private ObjectId id;
+    private String id;
 
     private String title;
     private String content;

@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController(value = "/blog/post")
+@RestController @RequestMapping(path = "blog/post")
 public class BlogController {
     @Autowired
     private BlogService blogService;
