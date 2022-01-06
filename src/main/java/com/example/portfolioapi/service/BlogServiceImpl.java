@@ -26,17 +26,17 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public BlogPost editPost(ObjectId postId, BlogPost blogPost) {
+    public BlogPost editPost(String postId, BlogPost blogPost) {
         return null;
     }
 
     @Override
-    public Optional<BlogPost> getPost(ObjectId postId) {
+    public Optional<BlogPost> getPost(String postId) {
         return blogRepository.findById(postId);
     }
 
     @Override
-    public void deletePost(ObjectId postId) {
+    public void deletePost(String postId) {
         blogRepository.deleteById(postId);
     }
 }

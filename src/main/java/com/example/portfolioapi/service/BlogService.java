@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface BlogService {
     List<BlogPost> getAllPosts();
     BlogPost createPost(BlogPost blogPost);
-    BlogPost editPost(ObjectId postId, BlogPost blogPost);
-    Optional<BlogPost> getPost(ObjectId postId);
-    void deletePost(ObjectId postId);
+    BlogPost editPost(String postId, BlogPost blogPost);
+    Optional<BlogPost> getPost(String postId);
+    void deletePost(String postId);
 }
